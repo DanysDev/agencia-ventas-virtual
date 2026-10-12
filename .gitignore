@@ -1,0 +1,22 @@
+# --- Dependencias y artefactos locales de OpenCode ---
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
+
+# --- Herramientas de desarrollo (no forman parte del sistema) ---
+.archify/
+.playwright-mcp/
+
+# --- Datos privados del negocio (repo público: NO se suben) ---
+# Cada producto y cada dueño tiene su carpeta con precios del dueño, comisiones y vales.
+# El sistema (agentes, reglas, plantillas) sí se versiona; el trabajo real, no.
+agencia/productos/*/
+agencia/proveedores/*/
+
+# --- Sistema / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
