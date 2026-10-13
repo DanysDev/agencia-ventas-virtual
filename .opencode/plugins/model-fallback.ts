@@ -41,7 +41,7 @@ const CADENA_POR_DEFECTO: ModelRef[] = [
   { providerID: "opencode", id: "nemotron-3-ultra-free" },
 ]
 
-/** Los 7 agentes de la agencia: a ellos sí les aplicamos la cadena. */
+/** Los 7 agentes de la agencia + los 9 de la empresa: a ellos sí les aplicamos la cadena. */
 const AGENTES_AGENCIA = new Set([
   "director-general",
   "analista-producto",
@@ -50,6 +50,15 @@ const AGENTES_AGENCIA = new Set([
   "creativo-visual",
   "asistente-comercial",
   "control-calidad",
+  "director-tecnico",
+  "investigador-stack",
+  "analista-requerimientos",
+  "arquitecto-software",
+  "disenador-uxui",
+  "desarrollador-fullstack",
+  "ingeniero-testing",
+  "control-calidad-soft",
+  "devops-documentador",
 ])
 
 /** Cadenas específicas por agente (opcional). Si falta, usa la cadena por defecto. */

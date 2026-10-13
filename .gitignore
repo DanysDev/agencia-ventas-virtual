@@ -14,6 +14,14 @@
 agencia/productos/*/
 agencia/proveedores/*/
 
+# --- Empresa: trabajo interno por proyecto (el sistema sí se versiona) ---
+# brief, investigación, requerimientos, reportes… quedan en local.
+empresa/proyectos/*/
+
+# --- Secretos de los proyectos de software (solo .env.example se versiona) ---
+proyectos/*/*/.env
+**/.env.local
+
 # --- Sistema / editor ---
 .DS_Store
 Thumbs.db
