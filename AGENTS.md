@@ -112,29 +112,3 @@ archivos, dudas y bloqueos. El detalle vive en los archivos.
 El gestor construirá un sistema web aparte. Para que lo pueda consumir, mantén
 `publico.json` (UI de clientes) y `privado.json` (interno) con esos nombres y
 campos. No los renombres sin avisar.
-
----
-
-# Empresa virtual de software (segundo negocio del proyecto)
-
-Empresa multi-proyecto sin stack fijo. El usuario da una idea cruda al Director
-Técnico y la empresa la convierte en software corriendo.
-
-- **Director Técnico** (`director-tecnico`, primario): única autoridad (R12),
-  gestiona `empresa/portafolio.md` y `empresa/proyectos/_indice.md`, reparte a
-  los 8 especialistas. Permisos: `empresa/*` + `proyectos/*`.
-- **Especialistas** (subagentes, modelo `google/gemini-3.8-flash`):
-  `investigador-stack` → `analista-requerimientos` → `arquitecto-software` →
-  `disenador-uxui` → `desarrollador-fullstack` → `ingeniero-testing` →
-  `control-calidad-soft` → `devops-documentador`.
-- **Gestión:** `empresa/proyectos/<slug>/brief.md` + `cambios.md` por versión +
-  `vN/` con investigacion, requerimientos, arquitectura, diseno_uxui, tareas,
-  test_reporte, qa_reporte, entrega, registro. Plantillas en `empresa/plantillas/`.
-- **Código:** `proyectos/<slug>/vN/` con `src/` (solo dev), `tests/` (solo
-  testing), `README.md`, `.env.example`, `Dockerfile` en fase 2.
-- **Reglas inviolables:** `empresa/config/politica.md` (R1-R13). Claves: R2
-  separación src/tests, R3 cobertura ≥70%, R4 QA bloquea, R5 despliegue en 2
-  fases con OK, R6 sin secretos, R11 código en inglés legible, R13 regresión
-  obligatoria. Tono técnico directo en español neutro.
-- **Modelos:** misma cadena de la agencia; el plugin `model-fallback.ts` cubre
-  los 16 agentes.
