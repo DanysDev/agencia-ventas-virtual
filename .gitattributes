@@ -1,0 +1,8 @@
+# Normaliza finales de línea en cualquier sistema
+* text=auto eol=lf
+
+# Binarios que no se normalizan
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
