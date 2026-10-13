@@ -99,6 +99,11 @@ agencia/
   proveedores/_indice.md         # índice de dueños
 docs/
   arquitectura.png / .html       # diagrama del sistema
+.github/
+  CODEOWNERS                     # dueño del repo
+  pull_request_template.md       # plantilla de PR
+CONTRIBUTING.md                  # flujo de ramas (Gitflow)
+LICENSE                          # MIT
 ```
 
 > **Nota de privacidad:** el repo es público, así que las carpetas de trabajo reales
@@ -114,6 +119,22 @@ docs/
 3. Abre una sesión con el agente **Director General** y mándale el producto:
    fotos + lo que sepas (qué es, estado, dueño y si la comisión es fija o libre).
 4. El Director reparte el trabajo y devuelve el paquete listo para copiar y pegar.
+
+## Ramas y flujo de trabajo
+
+Gitflow, con `main` como rama estable y protegida:
+
+| Rama | Para qué |
+|---|---|
+| `main` | Versión estable / publicable (protegida) |
+| `develop` | Integración del trabajo en curso (protegida) |
+| `feature/<tema>` | Nueva función o mejora → PR a `develop` |
+| `release/<version>`, `hotfix/<tema>` | Cierre de versión y arreglos urgentes (protegidas) |
+
+`main`, `develop`, `release/*` y `hotfix/*` no admiten push directo, ni borrado,
+ni reescritura de historial: todo entra por **Pull Request**. Detalle del flujo en
+[`CONTRIBUTING.md`](CONTRIBUTING.md). El repositorio tiene además **escaneo de
+secretos** y **protección de push** activados.
 
 ## Reglas de negocio clave
 
@@ -151,3 +172,7 @@ No cierra la venta ni cobra.
   V2 que costaron encontrar (los subagentes sí heredan su `model:` pero las sesiones
   primarias no; y un `shell: deny` en un agente hace que la capa gratis de ZEN
   rechace las peticiones con 403).
+
+## Licencia
+
+MIT — ver [`LICENSE`](LICENSE).
