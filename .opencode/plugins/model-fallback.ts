@@ -9,7 +9,7 @@
  * Cadena por defecto (la que usan los 7 agentes de la agencia):
  *   1) principal : google/gemini-3.8-flash         (Google AI Studio — capa gratis)
  *   2) respaldo 1: opencode/big-pickle             (OpenCode ZEN, gratis)
- *   3) respaldo 2: opencode/nemotron-3-ultra-free  (OpenCode ZEN, gratis)
+ *   3) respaldo 2: opencode/nemotron-3.5-lightning-free  (OpenCode ZEN, gratis)
  *
  * Extra importante (comprobado en la v2.0.26):
  *  - Los SUBAGENTES sí usan su `model:` del frontmatter (corren en sesión hija).
@@ -38,7 +38,7 @@ type ModelRef = { providerID: string; id: string }
 const CADENA_POR_DEFECTO: ModelRef[] = [
   { providerID: "google", id: "gemini-3.8-flash" },
   { providerID: "opencode", id: "big-pickle" },
-  { providerID: "opencode", id: "nemotron-3-ultra-free" },
+  { providerID: "opencode", id: "nemotron-3.5-lightning-free" },
 ]
 
 /** Los 7 agentes de la agencia: a ellos sí les aplicamos la cadena. */
