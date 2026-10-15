@@ -9,7 +9,7 @@ Todo gratis: Google AI Studio (capa gratis) + OpenCode ZEN (modelos gratis).
 |-------|--------|-----------|-------|
 | Principal | `google/gemini-3.8-flash` | Google AI Studio | El mejor gratis de Google y **ve imágenes** |
 | Respaldo 1 | `opencode/big-pickle` | OpenCode ZEN | Gratis, el más fuerte del ZEN |
-| Respaldo 2 | `opencode/nemotron-3-ultra-free` | OpenCode ZEN | Gratis, segundo del ZEN |
+| Respaldo 2 | `opencode/nemotron-3.5-lightning-free` | OpenCode ZEN | Gratis, segundo del ZEN |
 
 El respaldo entra **solo si el principal falla** por algo que se arregla probando
 otro modelo: cuota agotada (429), servidor sobrecargado (503), timeout, caída de
